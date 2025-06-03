@@ -11,13 +11,13 @@
   <header>
     <nav class="navbar" aria-label="Main navigation" role="navigation">
       <h1 class="logo">BootHub</h1>
-      <button class="hamburger" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <button class="hamburger" aria-expanded="false" aria-label="Toggle menu"> </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="catalogue.html">Catalogue</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="feedback.html" aria-current="page">Contact</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="feedback.html" aria-current="page">Contact Us</a></li>
         <li><a href="cart.html">Cart 🛒 <span class="cart-count">0</span></a></li>
       </ul>
     </nav>
@@ -36,10 +36,12 @@
           <div class="form-group">
             <label for="name">Full Name <span class="required">*</span></label>
             <input type="text" id="name" name="name" required aria-required="true">
+            <div id="nameError" class="error">please enter a valid full name</div>
           </div>
           <div class="form-group">
             <label for="email">Email Address <span class="required">*</span></label>
             <input type="email" id="email" name="email" required aria-required="true">
+            <div id="emailError" class="error">Please enter a valid email address</div>
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
@@ -95,8 +97,8 @@
         <div class="footer-section">
           <h3>Company</h3>
           <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="feedback.html">Contact</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="feedback.html">Contact Us</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
           </ul>
         </div>
@@ -115,8 +117,11 @@
       </div>
     </footer>
 
-    <script>
+    +
       <script src="assets/js/feedback.js"></script>
-    </script>
+    
   </body>
 </html>
+
+
+    
